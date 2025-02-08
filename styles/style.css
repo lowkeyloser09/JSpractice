@@ -1,0 +1,34 @@
+body {
+    font-family: Arial;
+}
+
+.b1 {
+    border-radius: 50px;
+    padding: 10px 15px;
+    border: none;
+    color: #F0F0F0;
+    background-color: black;
+    font-weight: bold;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.is-subscribed {
+    color: black;
+    background-color: #F0F0F0;
+}
+
+.inp1 {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.b2 {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 12px 15px;
+    cursor: pointer;
+}

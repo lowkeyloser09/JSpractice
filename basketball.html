@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+        // 8a.
+        const basketball = {
+            name: "basketball",
+            price: 2095
+        }
+        //console.log(JSON.stringify(basketball));
+
+        // 8b.
+        basketball.price += 500;
+        //console.log(JSON.stringify(basketball));
+
+        // 8c.
+        basketball["delivery-time"] = "3 days";
+        //console.log(JSON.stringify(basketball));
+
+        // 8d.
+        const product1 = {
+            name: "pr1",
+            price: 69420
+        }
+
+        const product2 = {
+            name: "pr1",
+            price: 69420
+        }
+
+        function comparePrice(product1, product2) {
+            let lessExpense = "";
+            if (product1.price > product2.price) {
+                lessExpense = JSON.stringify(product1);
+            } else if (product2.price > product1.price) {
+                lessExpense = JSON.stringify(product2);
+            }
+            return lessExpense;
+        }
+
+        //console.log(comparePrice(product1, product2));
+
+        // 8e.
+        function isSameProduct(product1, product2) {
+            if (JSON.stringify(product1) === JSON.stringify(product2)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        //console.log(isSameProduct(product1, product2));
+
+        // 8f.
+        let str = "Good morning";
+        console.log(str.toLowerCase());
+
+        // 8g.
+        let str1 = "buheheehe";
+        console.log(str1.repeat(5));
+
+        // 8h.
+        
+
+
+
+
+    </script>
+</body>
+</html>

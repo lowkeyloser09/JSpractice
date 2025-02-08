@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Functions 2</title>
+</head>
+<body>
+    
+     <!-- <button class="b1" onclick="finish()">Start</button> <br> -->
+
+    <!-- <button class="addtocart" onclick="msg()">Add to Cart</button>  -->
+    <!-- <p class="added"></p> <br><br> -->
+
+    <!-- <button onclick="messages++;">Add</button> -->
+    <!-- <button onclick="messages--;">Remove</button> -->
+
+    <button onclick="" class="b1">Click</button>
+
+    <script>
+
+        const buttonElement = document.querySelector(".b1");
+
+        buttonElement.addEventListener("click", () => {
+            console.log("click");
+        });
+
+        const eventListener = () => {
+            console.log("click");
+        };
+
+        buttonElement.removeEventListener("click", eventListener);
+
+        buttonElement.addEventListener("click1", () => {
+            console.log("hemlo");
+            
+        });
+
+       /* function finish() {
+            const buttonElement = document.querySelector(".b1");
+            buttonElement.innerHTML = "Loading...";
+            setTimeout(function() {
+                if (buttonElement.innerHTML === "Loading...") {
+                buttonElement.innerHTML = "Finished!";
+            }
+            }, 1500);
+        }
+
+        let isPlaying = false;
+        let timeoutId;
+
+        function msg() {
+            const buttonElement = document.querySelector(".addtocart");
+            const added = document.querySelector(".added");
+
+            added.innerHTML = "Added";
+
+
+
+            if (!isPlaying) {
+                timeoutId = setTimeout(function() {
+                added.remove();
+               }, 2000);
+               isPlaying = true;
+            } else {
+                clearTimeout(timeoutId);
+                isPlaying = false;
+            }
+            
+        } 
+
+        let messages = 2;
+        setInterval(function() {
+            if (document.title === "Advanced Functions 2") {
+
+                document.title = `(${messages}) New Messages`;
+            } else {
+                document.title === "Advanced Functions 2";
+            }
+        }, 1000); */
+
+        /* const arrowFunction = () => {
+            console.log("hello");
+        }
+
+        const oneArrow = smthn => {
+            console.log(smthn); 
+            console.log(smthn + 1); // When there is only one parameter in function parenthesses ain't necessary
+        }
+        
+        const blow = (smthn, vax) => console.log(smthn + vax); // when there is only one line in a function square brackets ain't necessary
+
+        const ret = () => 93 + 4; 
+
+        oneArrow(98);
+        blow(95, 4);
+        console.log(ret());
+
+        const object2 = {
+            method: () => {
+
+            },
+            method1() {
+
+            }
+        };
+        console.log(typeof object2.method1); */
+
+
+
+
+    </script>
+</body>
+</html>

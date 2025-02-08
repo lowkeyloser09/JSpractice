@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Youtube Subscribe Button</h3>
+    <button class="b1" onclick="subScribed()">Subscribe</button>
+
+
+    <script>
+        const subscribeButton = document.querySelector(".b1");
+
+        function subScribed() {
+            if (subscribeButton.innerText === "Subscribe") {
+
+                subscribeButton.innerHTML = "Subscribed";
+                subscribeButton.classList.add("is-subscribed");
+                
+            } else {
+                subscribeButton.innerHTML = "Subscribe";
+                subscribeButton.classList.remove("is-subscribed");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    font-family: Arial;
+}
+
+.b1 {
+    background-color: #016F01;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 10px 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.del {
+    background-color: #6F0000;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 10px 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.todo-grid, .todo-input {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.inp1,
+.dt1 {
+    font-size: 15px;
+    padding: 6px;
+}
+
