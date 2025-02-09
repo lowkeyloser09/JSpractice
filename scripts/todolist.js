@@ -43,6 +43,7 @@ function addTodo() {
 
     inputElement.value = "";
     renderTodoList();
+    
 
 }
 
